@@ -1,0 +1,13 @@
+function numPrimeOrNot(num) {
+  if (num > 1000) {
+    return `Неверное число - ${num}`;
+  }
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+console.log(numPrimeOrNot(100000));
